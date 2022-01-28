@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <button type="button">
       <ng-content></ng-content>
+
+      Inner
     </button>
   `,
   styles: [

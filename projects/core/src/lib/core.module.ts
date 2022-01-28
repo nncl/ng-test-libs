@@ -3,7 +3,6 @@ import { CoreComponent } from './core.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserServiceConfig } from './core.service';
 
-
 @NgModule({
   declarations: [
     CoreComponent
