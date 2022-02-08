@@ -1,14 +1,14 @@
 import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import Code from '../../assets/code-brackets.svg';
+import Colors from '../../assets/colors.svg';
+import Comments from '../../assets/comments.svg';
+import Direction from '../../assets/direction.svg';
+import Flow from '../../assets/flow.svg';
+import Plugin from '../../assets/plugin.svg';
+import Repo from '../../assets/repo.svg';
+import StackAlt from '../../assets/stackalt.svg';
 
-<Meta title="Getting Started" />
+<Meta title="Módulos/CoreModule" />
 
 <style>{`
   .subheading {
@@ -114,57 +114,34 @@ import StackAlt from './assets/stackalt.svg';
 
 `}</style>
 
-# Project Title
+# CoreModule
 
-Essa biblioteca tem como objetivo centralizar componentes, serviços e assets das aplicações da [Open Source](https://en.wikipedia.org/wiki/Open_source).
+Módulo responsável pelos serviços da biblioteca.
 
-Qualquer dúvida/crítica/sugestão, abra uma issue em [nosso repositório](https://github.com/nncl/ng-test-libs).
+<div className="subheading">Uso</div>
 
-<div className="subheading">Instalação</div>
+#### CoreModule
+Realize a importação do `CoreModule` em seu arquivo **app.module** da seguinte forma:
 
-```bash
-npm install github:nncl/ng-test-libs#1.2.0
-```
+```typescript
+import { CoreModule } from 'customer-libs/dist/core';
 
-Ou adicione a seguinte linha em seu arquivo **package.json**:
-
-```json
-{
-  "dependencies": {
-    "customer-libs": "github:nncl/ng-test-libs#1.2.0"
-  }
-}
+// ...
+@NgModule({
+  imports: [
+    CoreModule.forRoot({ uriApi: environment.urlApi })
+  ]
+});
 ```
 
 <div className="subheading">Next</div>
 
 <div className="link-list">
-  <a className="link-item" href="/story/módulos-intro--page" target="_self">
+  <a className="link-item" href="/story/introduction-módulos-coremodule--page" target="_self">
     <img src={Comments} alt="modules" />
     <span>
-      <strong>Módulos</strong>
-      Importações e uso de módulos disponíveis
-    </span>
-  </a>
-  <a className="link-item" href="/story/vss-ui-intro--page" target="_self">
-    <img src={Repo} alt="components" />
-    <span>
-      <strong>Componentes</strong>
-      Uso de componentes
-    </span>
-  </a>
-  <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
-    <img src={Direction} alt="services" />
-    <span>
       <strong>Serviços</strong>
-      Serviços disponíveis
-    </span>
-  </a>
-  <a className="link-item" href="https://github.com/nncl/ng-test-libs" target="_blank">
-    <img src={Code} alt="github" />
-    <span>
-      <strong>GitHub project</strong>
-      Contribua com o projeto
+      Descubra os serviços disponíveis para uso.
     </span>
   </a>
 </div>

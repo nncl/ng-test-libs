@@ -8,7 +8,7 @@ import Plugin from './assets/plugin.svg';
 import Repo from './assets/repo.svg';
 import StackAlt from './assets/stackalt.svg';
 
-<Meta title="Getting Started" />
+<Meta title="Troubleshooting/Troubleshooting" />
 
 <style>{`
   .subheading {
@@ -114,57 +114,10 @@ import StackAlt from './assets/stackalt.svg';
 
 `}</style>
 
-# Project Title
+# Troubleshooting
 
-Essa biblioteca tem como objetivo centralizar componentes, serviços e assets das aplicações da [Open Source](https://en.wikipedia.org/wiki/Open_source).
+Problemas que você pode encontrar no uso da biblioteca.
 
-Qualquer dúvida/crítica/sugestão, abra uma issue em [nosso repositório](https://github.com/nncl/ng-test-libs).
+## Error: NG0203: inject() must be called from an injection context
 
-<div className="subheading">Instalação</div>
-
-```bash
-npm install github:nncl/ng-test-libs#1.2.0
-```
-
-Ou adicione a seguinte linha em seu arquivo **package.json**:
-
-```json
-{
-  "dependencies": {
-    "customer-libs": "github:nncl/ng-test-libs#1.2.0"
-  }
-}
-```
-
-<div className="subheading">Next</div>
-
-<div className="link-list">
-  <a className="link-item" href="/story/módulos-intro--page" target="_self">
-    <img src={Comments} alt="modules" />
-    <span>
-      <strong>Módulos</strong>
-      Importações e uso de módulos disponíveis
-    </span>
-  </a>
-  <a className="link-item" href="/story/vss-ui-intro--page" target="_self">
-    <img src={Repo} alt="components" />
-    <span>
-      <strong>Componentes</strong>
-      Uso de componentes
-    </span>
-  </a>
-  <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
-    <img src={Direction} alt="services" />
-    <span>
-      <strong>Serviços</strong>
-      Serviços disponíveis
-    </span>
-  </a>
-  <a className="link-item" href="https://github.com/nncl/ng-test-libs" target="_blank">
-    <img src={Code} alt="github" />
-    <span>
-      <strong>GitHub project</strong>
-      Contribua com o projeto
-    </span>
-  </a>
-</div>
+Remova o diretório `node_modules` do pacote instalado. Mais informações [aqui](https://app.asana.com/0/1200992879317612/1201786427816535/f).

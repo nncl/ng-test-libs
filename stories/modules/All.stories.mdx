@@ -1,14 +1,7 @@
 import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import Comments from '../assets/comments.svg';
 
-<Meta title="Getting Started" />
+<Meta title="Módulos/Intro" />
 
 <style>{`
   .subheading {
@@ -114,57 +107,23 @@ import StackAlt from './assets/stackalt.svg';
 
 `}</style>
 
-# Project Title
+# Módulos
 
-Essa biblioteca tem como objetivo centralizar componentes, serviços e assets das aplicações da [Open Source](https://en.wikipedia.org/wiki/Open_source).
-
-Qualquer dúvida/crítica/sugestão, abra uma issue em [nosso repositório](https://github.com/nncl/ng-test-libs).
-
-<div className="subheading">Instalação</div>
-
-```bash
-npm install github:nncl/ng-test-libs#1.2.0
-```
-
-Ou adicione a seguinte linha em seu arquivo **package.json**:
-
-```json
-{
-  "dependencies": {
-    "customer-libs": "github:nncl/ng-test-libs#1.2.0"
-  }
-}
-```
-
-<div className="subheading">Next</div>
+Os módulos disponíveis na biblioteca são os seguintes:
 
 <div className="link-list">
-  <a className="link-item" href="/story/módulos-intro--page" target="_self">
+  <a className="link-item" href="/story/módulos-coremodule--page" target="_self">
     <img src={Comments} alt="modules" />
     <span>
-      <strong>Módulos</strong>
-      Importações e uso de módulos disponíveis
+      <strong>CoreModule</strong>
+      Módulo responsável pelos serviços da biblioteca.
     </span>
   </a>
-  <a className="link-item" href="/story/vss-ui-intro--page" target="_self">
-    <img src={Repo} alt="components" />
+  <a className="link-item" href="/story/módulos-uimodule--page" target="_self">
+    <img src={Comments} alt="components" />
     <span>
-      <strong>Componentes</strong>
-      Uso de componentes
-    </span>
-  </a>
-  <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
-    <img src={Direction} alt="services" />
-    <span>
-      <strong>Serviços</strong>
-      Serviços disponíveis
-    </span>
-  </a>
-  <a className="link-item" href="https://github.com/nncl/ng-test-libs" target="_blank">
-    <img src={Code} alt="github" />
-    <span>
-      <strong>GitHub project</strong>
-      Contribua com o projeto
+      <strong>UiModule</strong>
+      Módulo responsável pelos componentes da biblioteca.
     </span>
   </a>
 </div>
