@@ -1146,7 +1146,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/ui/UiButton.stories.ts",
+                "file": "stories/ui/pages/UiButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1283,21 +1283,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1313,7 +1313,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/ui/UiButton.stories.ts",
+                "file": "stories/ui/pages/UiButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<UiComponent>",
@@ -1399,12 +1399,12 @@
                     "defaultValue": "new InjectionToken<CoreConfig>('CORE_CONFIG')"
                 }
             ],
-            "stories/ui/UiButton.stories.ts": [
+            "stories/ui/pages/UiButton.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/ui/UiButton.stories.ts",
+                    "file": "stories/ui/pages/UiButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1414,7 +1414,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/ui/UiButton.stories.ts",
+                    "file": "stories/ui/pages/UiButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<UiComponent>",
@@ -1964,7 +1964,7 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/ui/UiButton.stories.ts",
+                "filePath": "stories/ui/pages/UiButton.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1974,7 +1974,7 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/ui/UiButton.stories.ts",
+                "filePath": "stories/ui/pages/UiButton.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
