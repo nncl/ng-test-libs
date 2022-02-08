@@ -1,15 +1,24 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
+import { UiModule } from 'ui';
+import { CoreModule } from 'core';
+
 import { AppComponent } from './app.component';
+import { AboutComponent } from './pages/about/about.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+
+        CoreModule.forRoot({ uriApi: 'https://randomuser.me/api/?gender=female' }),
+        UiModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        AboutComponent
       ],
     }).compileComponents();
   });
@@ -26,10 +35,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('test-app');
   });
 
-  it('should render title', () => {
+  it('should render list items', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('test-app app is running!');
+    const list = compiled.querySelectorAll('li');
+
+    expect(list.length).toBe(3);
   });
 });
