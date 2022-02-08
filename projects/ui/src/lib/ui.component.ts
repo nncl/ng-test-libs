@@ -1,24 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-core',
+  selector: 'vss-ui',
   template: `
     <button type="button">
       <ng-content></ng-content>
-
-      Inner
     </button>
   `,
   styles: [
     `
       button {
+        appearance: none;
+        border: 0;
+        cursor: pointer;
+
         width: 100%;
-        line-height: 36px;
+
+        line-height: 150%;
+        font-size: 1.5rem;
       }
     `
   ]
 })
-export class CoreComponent implements OnInit {
+export class UiComponent implements OnInit {
 
   constructor() { }
 
