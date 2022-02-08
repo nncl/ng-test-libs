@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'vss-ui',
@@ -22,11 +22,5 @@ import { Component, OnInit } from '@angular/core';
     `
   ]
 })
-export class UiComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class UiComponent {
 }
