@@ -1,17 +1,23 @@
-import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
-import { CoreComponent } from './core.component';
+import { InjectionToken, ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { UserServiceConfig } from './core.service';
+import { CommonModule } from '@angular/common';
+
+export interface CoreConfig {
+  uriApi: string;
+}
+
+export const CORE_CONFIG_TOKEN = new InjectionToken<CoreConfig>('CORE_CONFIG');
 
 @NgModule({
   declarations: [
-    CoreComponent
+    // CoreComponent
   ],
   imports: [
+    CommonModule,
     HttpClientModule
   ],
   exports: [
-    CoreComponent
+    // CoreComponent
   ]
 })
 export class CoreModule {
@@ -22,11 +28,11 @@ export class CoreModule {
     }
   }
 
-  static forRoot(config: UserServiceConfig): ModuleWithProviders<CoreModule> {
+  static forRoot(config: CoreConfig): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
       providers: [
-        { provide: UserServiceConfig, useValue: config }
+        { provide: CORE_CONFIG_TOKEN, useValue: config }
       ]
     };
   }
