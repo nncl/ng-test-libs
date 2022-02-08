@@ -7,6 +7,10 @@
       "core": [
         "dist/core/core",
         "dist/core"
+      ],
+      "ui": [
+        "dist/ui/ui",
+        "dist/ui"
       ]
     },
     "outDir": "./dist/out-tsc",
